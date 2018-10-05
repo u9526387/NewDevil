@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    tools:context=".Landlord_Register">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/first_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="手機:"
+                    android:textSize="35dp" />
+
+                <EditText
+                    android:id="@+id/etPhone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBaseline="@+id/account"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/account"
+                    android:hint="請輸入您的手機號碼" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_verification"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@drawable/button_shape3"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="發送認證"
+                android:textColor="#3B4A75"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:id="@+id/second_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_part"
+                >
+
+            <TextView
+                android:id="@+id/verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:text="認證碼:"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/etVerification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/verification"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/verification"
+                android:hint="請輸入收到的認證碼" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/third_part"
+                android:layout_below="@+id/second_part"
+                >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:text="姓名:"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/name"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/name"
+                android:hint="請輸入姓名" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/four_part"
+                android:layout_below="@+id/third_part"
+                >
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:text="密碼:"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/password"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/password"
+                android:hint="請輸入您的密碼" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/five_part"
+                android:layout_below="@+id/four_part"
+                >
+            <TextView
+                android:id="@+id/password_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginTop="10dp"
+                android:text="密碼確認:"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/etPassword_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/password_check"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/password_check"
+                android:hint="請再次輸入您的密碼" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/six_part"
+                android:layout_below="@+id/five_part"
+                >
+            <TextView
+                android:id="@+id/religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:text="宗教信仰:"
+                android:textSize="35dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerReligion"
+                    android:layout_width="132dp"
+                    android:layout_height="47dp"
+                    android:layout_alignTop="@+id/religion"
+                    android:layout_toRightOf="@+id/religion"
+                    android:entries="@array/religion"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seven_part"
+                android:layout_below="@+id/six_part"
+
+                >
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="語言:"
+                android:textSize="35dp" />
+
+
+
+
+            <CheckBox
+                android:id="@+id/cbChinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/language"
+                android:layout_toRightOf="@+id/language"
+                android:text="中文"
+                android:textSize="17dp" />
+
+            <CheckBox
+                android:id="@+id/cbEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/language"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/cbChinese"
+                android:text="英文"
+                android:textSize="17dp" />
+
+            <CheckBox
+                android:id="@+id/cbTaiwanese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/language"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/cbEnglish"
+                android:text="台語"
+                android:textSize="17dp" />
+
+            <CheckBox
+                android:id="@+id/cbKE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/language"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/cbTaiwanese"
+                android:text="客家話"
+                android:textSize="17dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eight_part"
+                android:layout_below="@+id/seven_part"
+
+                >
+            <TextView
+                android:id="@+id/career"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginTop="10dp"
+                android:text="職業:"
+                android:textSize="35dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCareer"
+                android:layout_width="132dp"
+                android:layout_height="47dp"
+                android:layout_alignTop="@+id/career"
+                android:layout_toRightOf="@+id/career"
+                android:entries="@array/career"
+
+                android:spinnerMode="dialog" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nine_part"
+                android:layout_below="@id/eight_part"
+                >
+
+            <TextView
+                android:id="@+id/smoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginTop="10dp"
+                android:text="是否抽菸:"
+                android:textSize="35dp" />
+
+            <RadioButton
+                android:id="@+id/smoke_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/smoke"
+                android:layout_toRightOf="@+id/smoke"
+                android:text="是"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/smoke_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/smoke_yes"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/smoke_yes"
+                android:text="否"
+                android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ten_part"
+                android:layout_below="@+id/nine_part"
+
+                >
+            <TextView
+                android:id="@+id/pet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:text="養寵物:"
+                android:textSize="35dp" />
+
+            <RadioButton
+                android:id="@+id/pet_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pet"
+                android:layout_toRightOf="@+id/pet"
+                android:text="是"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/pet_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pet_yes"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/pet_yes"
+                android:text="否"
+                android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ten_part">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="簡短自我介紹:"
+                    android:textSize="35dp" />
+
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_below="@+id/introduction"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                card_view:cardBackgroundColor="@color/splash_logon_ringProgressColor"
+                card_view:cardCornerRadius="4dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="請輸入簡單的自我介紹吧!" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/next2"
+
+                    android:text="完成註冊"
+                    android:textColor="#3B4A75"
+                    android:textSize="30dp"
+
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/button_shape3"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

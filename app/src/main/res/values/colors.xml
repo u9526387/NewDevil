@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_material_light">#f9ecd0</color>
+    <color name="dark_black">#0A0A0A</color>
+
+
+    <!--_______________________________________________________________________________repeat_login__-->
+    <color name="color_repeat_login_text">#c11919</color>
+    <!--_______________________________________________________________________________Splash_Screen -->
+    <color name="splash_logon_ringProgressColor">#bcc0a2</color>
+    <color name="splash_logon_ringColor">#2ADE84</color>
+    <color name="splash_logon_textColor">#ffff</color>
+    <color name="splash_logon_text">#e4e4e4</color>
+</resources>

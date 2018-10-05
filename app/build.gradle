@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.example.u9526.newdevil"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    //cardview需對應他的版本
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-vector-drawable:27.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //新增library
+    implementation 'com.github.HotBitmapGG:RingProgressBar:V1.2.3'
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    //需對應buildToolsVersion "26.0.2"版本以上  更精美的框架(按鈕 多邊形)
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.volley:volley:1.0.0'
+    //登入註冊所需
+    implementation 'com.google.code.gson:gson:2.6.2'
+    // glide image library
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    //彈開Floating ActionButton
+    implementation 'com.github.clans:fab:1.6.4'
+    // circle image view
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+    implementation 'com.melnykov:floatingactionbutton:1.3.0'
+    // firebase
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    // 強大的圖片下載套件，解決緩存問題
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}

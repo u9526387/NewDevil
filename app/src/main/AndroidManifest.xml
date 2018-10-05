@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.u9526.newdevil">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/house2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/house2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Loading_Scene"
+            android:theme="@style/light_green_toolbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".First_page"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".welcome1"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".Try_homepage"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".welcome2"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".Choose_Identity"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".Landlord_Register"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".LoginPage"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".Tenant_Register"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".Try_search"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".Try_search2"
+            android:theme="@style/light_green_toolbar" />
+    </application>
+
+</manifest>

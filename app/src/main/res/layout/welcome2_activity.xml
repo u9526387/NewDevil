@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boy"
+            />
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="180dp"
+        android:background="@color/colorPrimaryDark"
+        card_view:cardBackgroundColor="@color/splash_logon_ringProgressColor"
+        card_view:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="個人資料與配對"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本系統為了讓使用者找到更適合與自己居住的房客或屋主，決定利用使用者所輸入的個人資料來進行配對，使用者填妥個人資料後可設定自己所重視的條件，系統會幫助使用者找到最適合的人選。"
+            android:textSize="25dp"
+            android:layout_marginTop="55dp"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/card_view"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/next2"
+
+            android:text="開始試用"
+            android:textColor="#3B4A75"
+            android:textSize="30dp"
+
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/button_shape3"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
