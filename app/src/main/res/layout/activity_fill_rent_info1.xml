@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillRentInfo1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title1"
+
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:text="請填寫房屋標題"
+            android:textSize="35dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/part1"
+        android:layout_below="@+id/title1"
+        >
+        <EditText
+            android:id="@+id/et_Htitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="請填寫房屋標題"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title2"
+        android:layout_below="@+id/part1"
+        android:layout_marginTop="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_roomtype"
+            android:text="請選擇房間類型"
+            android:textSize="35dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/part2"
+        android:layout_below="@id/title2"
+        >
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/sp_roomtype"
+            android:entries="@array/RoomType"
+            android:spinnerMode="dialog"
+            >
+        </Spinner>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title3"
+        android:layout_below="@+id/part2"
+        android:layout_marginTop="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_housetype"
+            android:text="請選擇房屋類型"
+            android:textSize="35dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/part3"
+        android:layout_below="@id/title3"
+        >
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/HouseType"
+            android:id="@+id/sp_housetype"
+            >
+        </Spinner>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title4"
+        android:layout_below="@id/part3"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="繼續填寫"
+            android:textSize="35dp"
+            android:background="@drawable/button_shape"
+            android:id="@+id/next_step1"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

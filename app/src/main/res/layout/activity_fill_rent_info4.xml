@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Try_search2">
+    tools:context=".FillRentInfo4">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="請挑選偏好房屋外部資料"
+                    android:text="請填寫房屋外部資料"
                     android:textSize="30dp"
                     />
 
@@ -251,8 +251,8 @@
                 <Button
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:id="@+id/finish_trying"
-                    android:text="完成填寫"
+                    android:id="@+id/bt_nextstep4"
+                    android:text="繼續填寫"
                     android:textSize="25dp"
                     android:background="@drawable/button_shape4"
 
@@ -262,6 +262,5 @@
 
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
-
 
 </RelativeLayout>

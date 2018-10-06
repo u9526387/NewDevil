@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillRentInfo5">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title1"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*房屋照片:"
+            android:textSize="28dp"
+            />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonChoose"
+            android:textSize="23dp"
+            android:text="選擇圖片"
+            android:background="@drawable/button_shape"
+
+            />
+
+    </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title2"
+                android:layout_below="@+id/title1"
+                android:layout_marginLeft="5dp"
+                >
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText"
+                    android:hint="請輸入圖片描述，EX:客廳"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title3"
+                android:layout_below="@+id/title2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_border"
+                >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                     />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/title4"
+                android:layout_below="@id/title3"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/buttonUpload"
+                    android:textSize="23dp"
+                    android:text="上傳圖片"
+                    android:background="@drawable/button_shape"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title5"
+                android:layout_below="@id/title4"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*聯絡人:"
+                    android:textSize="28dp"
+                    />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_name"
+                    android:hint="EX:王小明"
+                    />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:id="@+id/sp_boy_or_girl"
+                    android:entries="@array/boy_or_girl"
+                    android:spinnerMode="dialog"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title6"
+                android:layout_below="@+id/title5"
+                android:layout_marginTop="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*聯絡電話:"
+                    android:textSize="28dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_phone"
+                    android:hint= "EX:0912345678"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/title7"
+                android:layout_below="@+id/title6"
+                android:layout_marginTop="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*可聯絡時間:"
+                    android:textSize="28dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title8"
+                android:layout_below="@+id/title7"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/layout_border"
+                >
+
+                <Spinner
+                    android:id="@+id/sp_am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:entries="@array/AM_PM"
+                    android:layout_marginLeft="20dp"
+                    android:spinnerMode="dialog"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AM"
+                    android:textSize="28dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="~"
+                    android:textSize="28dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="22dp"
+                    />
+
+
+                <Spinner
+                    android:id="@+id/sp_pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:entries="@array/AM_PM"
+                    android:layout_marginLeft="20dp"
+                    android:spinnerMode="dialog"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PM"
+                    android:textSize="28dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title9"
+                android:layout_below="@+id/title8"
+                android:layout_marginTop="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textSize="28dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_email"
+                    android:hint= "EX:0912345678"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title10"
+                android:layout_below="@+id/title9"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bt_finish"
+                    android:textSize="23dp"
+                    android:text="完成填寫"
+                    android:background="@drawable/button_shape"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

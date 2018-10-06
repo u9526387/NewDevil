@@ -48,6 +48,21 @@
         <activity
             android:name=".Try_search2"
             android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".FillRentInfo1"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".FillRentInfo2"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".FillRentInfo3"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".FillRentInfo4"
+            android:theme="@style/light_green_toolbar" />
+        <activity
+            android:name=".FillRentInfo5"
+            android:theme="@style/light_green_toolbar" />
     </application>
 
 </manifest>

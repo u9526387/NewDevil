@@ -7,27 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Tenant_Register extends AppCompatActivity {
+public class FillRentInfo1 extends AppCompatActivity {
 
 
     private ActionBar toolbar;
-    private Button next2;
+    private Button next_step1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tenant__register);
+        setContentView(R.layout.activity_fill_rent_info1);
         toolbar = getSupportActionBar();
-        toolbar.setTitle("房客註冊");
+        toolbar.setTitle("填寫房屋資料");
 
-        next2 = (Button) findViewById(R.id.next2);
-        next2.setOnClickListener(new View.OnClickListener() {
+        next_step1 = (Button) findViewById(R.id.next_step1);
+        next_step1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tenant_Register.this, FillRentInfo1.class);
+                Intent intent = new Intent(FillRentInfo1.this, FillRentInfo2.class);
                 startActivity(intent);
-
             }
         });
+
 
     }
 }

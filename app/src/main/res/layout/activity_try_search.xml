@@ -54,7 +54,7 @@
         <Spinner
             android:id="@+id/sp_air"
             android:layout_width="280dp"
-            android:layout_height="48dp"
+            android:layout_height="47dp"
             android:layout_alignTop="@+id/tv_air"
             android:layout_toRightOf="@+id/tv_air"
             android:layout_marginLeft="5dp"

@@ -408,6 +408,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/card_view"
                 android:gravity="center"
+                android:layout_marginTop="15dp"
+
                 >
 
                 <Button
